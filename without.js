@@ -27,8 +27,9 @@ const without = function (array, excludeNums) {
       filteredArray.push(input);
     }
   }
-  console.log(filteredArray);
+  return filteredArray;
 };
+
 // Another way to do it:
 // const without = function (array, excludeNums) {
 //   let filteredArray = []; // create an empty array
@@ -42,10 +43,11 @@ const without = function (array, excludeNums) {
 //   console.log(filteredArray);
 // };
 
-without([1, 2, 3], [1]);
-without(["a", "b", "c"], ["a"]);
-without(["1", "2", "3", "3"], [1, 2, "3"]); // => ["1", "2"]
+// Test Code
+// without([1, 2, 3], [1]);
+// without(["a", "b", "c"], ["a"]);
+// without(["1", "2", "3", "3"], [1, 2, "3"]); // => ["1", "2"]
 const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
+without(words, ["lighthouse"]);
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+assertArraysEqual(without(words, "hello"), ["world", "lighthouse"]);
