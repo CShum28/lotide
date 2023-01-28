@@ -7,10 +7,6 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-// const assertEqual = function(actual, expected) {
-//   console.assert(actual === expected, 'this is not equal');
-// };
-
 const eqArrays = function (inputOne, inputTwo) {
   if (inputOne.length !== inputTwo.length) {
     return false;
