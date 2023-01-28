@@ -20,6 +20,7 @@ const eqArrays = function (inputOne, inputTwo) {
   return true;
 };
 
+// if using console.log - best to use if and else if because it will stop once it hits the correct condition
 const middle = function (array) {
   const i = Math.ceil(array.length / 2) - 1;
   if (array.length < 3) {
@@ -30,6 +31,20 @@ const middle = function (array) {
     console.log([array[i], array[i + 1]]);
   }
 };
+
+// When using return, it is best to use if statements rather than else if, because return only checks once
+// const middle = function (array) {
+//   const i = Math.ceil(array.length / 2) - 1;
+//   if (array.length < 3) {
+//     return [];
+//   } 
+//   if (array.length % 2 !== 0) {
+//     return [array[i]];
+//   } 
+//   if (array.length % 2 === 0) {
+//     return [array[i], array[i + 1]];
+//   }
+// };
 
 middle([1]); // => []
 middle([1, 2]); // => []
