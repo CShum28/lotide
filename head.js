@@ -7,13 +7,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// const assertEqual = function(actual, expected) {
-//   console.assert(actual === expected, 'this is not equal');
-// };
-
 const head = function(items) {
   return items[0];
-}
+};
 
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
