@@ -44,7 +44,7 @@ const without = function (array, excludeNums) {
 // };
 
 // Test Code
-// without([1, 2, 3], [1]);
+console.log(without([1, 2, 3], [1]));
 // without(["a", "b", "c"], ["a"]);
 // without(["1", "2", "3", "3"], [1, 2, "3"]); // => ["1", "2"]
 const words = ["hello", "world", "lighthouse"];

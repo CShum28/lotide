@@ -32,15 +32,17 @@ const middle = function (array) {
   }
 };
 
-// When using return, it is best to use if statements rather than else if, because return only checks once
+// When using return, it is best to use if statements rather
+// than else if, because return only checks once
+
 // const middle = function (array) {
 //   const i = Math.ceil(array.length / 2) - 1;
 //   if (array.length < 3) {
 //     return [];
-//   } 
+//   }
 //   if (array.length % 2 !== 0) {
 //     return [array[i]];
-//   } 
+//   }
 //   if (array.length % 2 === 0) {
 //     return [array[i], array[i + 1]];
 //   }

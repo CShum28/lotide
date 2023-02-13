@@ -9,6 +9,7 @@ const assertEqual = function (actual, expected) {
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
+
 const eqObjects = function (object1, object2) {
   const arrayOne = Object.keys(object1);
   const arrayTwo = Object.keys(object2);
@@ -78,3 +79,46 @@ assertEqual(
   eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject),
   false
 );
+
+// Week 3 - Stretch Project
+// const eqObjects = function (object1, object2) {
+//   const arrayOne = Object.keys(object1);
+//   const arrayTwo = Object.keys(object2);
+//   if (
+//     object1 === undefined ||
+//     object2 === undefined ||
+//     arrayOne.length !== arrayTwo.length
+//   ) {
+//     return false;
+//   }
+//   for (const key of arrayOne) {
+//     if (!eqKeyValue(object1, object2, key)) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
+// const eqKeyValue = function (object1, object2, key) {
+//   if (typeof object1[key] === "object") {
+//     //check if it is an object / array
+//     if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
+//       return eqArrays(object1[key], object2[key]);
+//     } else if (!Array.isArray(object1[key]) && !Array.isArray(object2[key])) {
+//       return eqObjects(object1[key], object2[key]);
+//     } else {
+//       return false;
+//     }
+//   } else {
+//     // primitive values
+//     if (object1[key] !== object2[key]) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+// };
+
+// console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => true
+// console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => false
+// console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
