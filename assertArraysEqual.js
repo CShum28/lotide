@@ -10,8 +10,6 @@ const assertArraysEqual = function (arrayOne, arrayTwo) {
   }
 };
 
-
-
 module.exports = assertArraysEqual;
 
 // const eqArrays = function (inputOne, inputTwo) {

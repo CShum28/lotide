@@ -1,24 +1,26 @@
 // FUNCTION IMPLEMENTATION
 
-const assertArraysEqual = function (arrayOne, arrayTwo) {
-  if (eqArrays(arrayOne, arrayTwo)) {
-    console.log(`🟢The arrays are the same`);
-  } else {
-    console.log(`🔴The arrays are not the same`);
-  }
-};
+const _ = require("./index");
 
-const eqArrays = function (inputOne, inputTwo) {
-  if (inputOne.length !== inputTwo.length) {
-    return false;
-  }
-  for (let i = 0; i < inputOne.length; i++) {
-    if (inputOne[i] !== inputTwo[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// const assertArraysEqual = function (arrayOne, arrayTwo) {
+//   if (eqArrays(arrayOne, arrayTwo)) {
+//     console.log(`🟢The arrays are the same`);
+//   } else {
+//     console.log(`🔴The arrays are not the same`);
+//   }
+// };
+
+// const eqArrays = function (inputOne, inputTwo) {
+//   if (inputOne.length !== inputTwo.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < inputOne.length; i++) {
+//     if (inputOne[i] !== inputTwo[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
 
 const without = function (array, excludeNums) {
   let filteredArray = [];
@@ -46,10 +48,10 @@ module.exports = without;
 // };
 
 // Test Code
-console.log(without([1, 2, 3], [1]));
+// console.log(without([1, 2, 3], [1]));
 // without(["a", "b", "c"], ["a"]);
 // without(["1", "2", "3", "3"], [1, 2, "3"]); // => ["1", "2"]
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-assertArraysEqual(without(words, "hello"), ["world", "lighthouse"]);
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]);
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// assertArraysEqual(without(words, "hello"), ["world", "lighthouse"]);
