@@ -4,11 +4,13 @@ const eqArrays = require("./eqArrays");
 
 const assertArraysEqual = function (arrayOne, arrayTwo) {
   if (eqArrays(arrayOne, arrayTwo)) {
-    console.log(`🟢The arrays are the same`);
+    return `🟢The arrays are the same`;
   } else {
-    console.log(`🔴The arrays are not the same`);
+    return `🔴The arrays are not the same`;
   }
 };
+
+
 
 module.exports = assertArraysEqual;
 
