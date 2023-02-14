@@ -34,6 +34,8 @@ const flatten = function (array) {
   return output;
 };
 
+module.exports = flatten;
+
 // const flatten = function (array) {
 //   const flattenedArray = [];
 //   if (Array.isArray(array)) {

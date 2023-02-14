@@ -35,6 +35,7 @@ const letterPositions = function (sentence) {
   return results;
 };
 
+module.exports = letterPositions;
 // Another way to do it:
 // const letterPositions = function (sentence) {
 //   const results = {};

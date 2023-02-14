@@ -48,6 +48,8 @@ assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
 
+module.exports = countOnly;
+
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 // const countOnly = function (allItems, itemsToCount) {

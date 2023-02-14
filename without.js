@@ -30,6 +30,8 @@ const without = function (array, excludeNums) {
   return filteredArray;
 };
 
+module.exports = without;
+
 // Another way to do it:
 // const without = function (array, excludeNums) {
 //   let filteredArray = []; // create an empty array

@@ -16,6 +16,8 @@ const findKeyByValue = function (tvGenres, show) {
   }
 };
 
+module.exports = findKeyByValue;
+
 // const findKeyByValue = function (tvGenres, show) {
 //   for (const genre in tvGenres) {
 //     if (tvGenres[genre] === show) {

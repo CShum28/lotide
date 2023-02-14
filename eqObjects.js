@@ -44,6 +44,8 @@ const eqArrays = function (inputOne, inputTwo) {
   return true;
 };
 
+module.exports = eqObjects;
+
 // Test Code
 // const shirtObject = { color: "red", size: "medium" };
 // const anotherShirtObject = { size: "medium", color: "red" };

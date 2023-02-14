@@ -15,6 +15,8 @@ const findKey = function (object, callback) {
   return undefined; // This is not needed, but is good for clarity
 };
 
+module.exports = findKey;
+
 console.log(
   findKey(
     {
